@@ -1,0 +1,77 @@
+header {
+	background: linear-gradient(lightblue, beige);
+	height: 100px;
+	width: 100%;
+	border-bottom: 2px solid black;
+}
+
+input{
+	margin-top: 50px;
+}
+
+ul#mainNav{
+	margin-top: 60px;
+}
+
+
+#siteTitle {
+	color: orange;
+	text-align: center;
+	text-decoration: none;
+	
+}
+
+#mainNav {
+	list-style-type: none;
+	display:inline;
+	a{
+		color:black;
+		text-decoration: none;
+	}
+	li {
+		display:inline;
+	}
+
+}
+
+footer {
+	background: linear-gradient(beige, lightblue);
+	height: 100px;
+	width: 100%;
+	border-top: 2px solid black;
+	text-align:center;
+}
+
+#shoesImages1 {
+	display:inline;
+	margin-left: -100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+
+	img{
+		height: 200px;
+		margin-top: 50px;
+		
+	}
+	a{
+	display:inherit;
+	}
+}
+
+#shoesImages2 {
+	display:inline;
+	margin-bottom: 100px;
+	img {
+		height: 200px;
+		margin-top: 50px;
+	}
+	a{
+	display:inherit;
+	}
+}
+
+#homeImage{
+	height: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}

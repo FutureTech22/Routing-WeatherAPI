@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="routing" lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main ui-view></main>
+    <header>
+        <div class="container">
+            <div class="row">
+            <weather city='cincinatti'></weather>
+            <input class='com-sm-3' placeholder='Search Our Site'>
+             <ul id='mainNav' class="col-sm-3">
+                    <li><a ui-sref='home'>Home</a></li>
+                    <li><a ui-sref='products'>Products</a></li>
+                    <!-- <li>Admin</li> -->
+                </ul>
+                <div class="col-sm-6">
+                <a id='siteTitle' ui-sref='home'><h2>My Site</h2></a>
+                </div>
+               
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <section class="col-sm-6" ui-view='content'></section>
+        </div>
+    </div>
+    <footer>
+    <p> ALL RIGHTS RESERVED </p>
+    </footer>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+
+    <script src='js/controllers/weatherController.js'></script>
+    <script src='js/main.js'></script>
+    <script src='js/services/API.js'></script>
+    <script src='js/weatherDirective.js'></script>
+  
+</body>
+
+</html>
